@@ -1,0 +1,41 @@
+<article>
+	<div class="date">
+		<span class="day"><%= blog_article_date.day -%></span>
+		<span class="month"><%= blog_article_date.amonth -%></span>
+	</div>	
+	<div class="header">
+	    <h2><%= blog_article_name -%></h2>
+	    <div class="info">
+		    <span class="author"><%= blog_article_author.first_name	-%></span>
+		    <span class="separator"> | </span>
+		    <span class="dtstamp"><%= blog_article_date ':nmonth :day:ordinal, :year' -%></span>
+	    </div>  
+	</div>
+  
+	<div class="body">
+		<% if blog_article_full_view? -%>
+		  <%= blog_article_content -%>
+		<% else -%>
+		  <%= blog_article_excerpt -%>
+		<% end -%> 
+	</div>
+
+	<div class="footer">
+		<% if !blog_article_full_view? -%>
+		    <span class="continue"><%= link_to @blog_article.has_excerpt? ? 'Continue reading' : 'Permalink', blog_article_url -%></span>
+		  <% end -%>
+		  <% if @blog.comments_enabled? %>
+		    <span class="comments"><%= blog_article_comments_link -%></span>
+		    <% if @blog_article.comments_enabled? %>
+		      <span class="reply"><%= reply_to_article_link -%></span>
+		    <% end %>  
+		  <% end %>
+	</div>
+</article>
+
+<% if blog_article_full_view? && @blog.comments_enabled? %>
+<div id="comments">
+	<%= blog_article_comments -%>
+	<%= partial blog_theme('comment_form') -%>
+</div>
+<% end -%>

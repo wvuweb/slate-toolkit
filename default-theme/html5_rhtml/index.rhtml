@@ -1,0 +1,34 @@
+<%= partial :header -%>
+</head>
+
+<body id="index" class="page-<%= @page.id -%>">
+
+<%= partial :navigation -%>
+
+	<main class="sixteen columns" role="main"> <!-- role="main", etc are ARIA roles, use appropriately: http://goo.gl/P3voj | Include a search in your theme: http://goo.gl/InZM8 -->
+
+		<%= content_for(:main) %>
+		
+	</main> <!-- close main -->
+	
+	<aside class="sidebar" role="complementary">
+		
+	</aside> <!-- close aside -->
+
+
+	<footer id="footer">
+		<%= partial 'shared/webstandards/html5/footer_contact_1' %>  
+		<%= partial 'shared/webstandards/html5/footer_credits' %>
+		<%= partial 'shared/webstandards/html5/footer_icons' %>
+	</footer>
+
+</div> <!-- close container -->
+
+<!-- Fix IE 8 and below so that media queries get supported -->
+<!--[if lt IE 9]>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+<![endif]-->
+
+<%= partial 'shared/webstandards/html5/browserupdateorg_script' %>
+</body>
+</html>

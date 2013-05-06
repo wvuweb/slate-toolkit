@@ -1,0 +1,8 @@
+<div id="archives">
+<h2>Archives for <%= Date::MONTHNAMES[blog_archive.month] -%> <%= blog_archive.day -%>, <%= blog_archive.year -%></h2>
+<ul>
+<% for @blog_article in blog_articles_in_archive -%>
+  <li><%= partial(blog_theme(:article)) -%></li>
+<% end -%>
+</ul>
+</div>

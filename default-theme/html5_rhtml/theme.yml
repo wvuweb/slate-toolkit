@@ -1,0 +1,10 @@
+--- 
+name: Site Name
+author: Author Name
+desc: "Theme for Site Name"
+permit: 
+- sitename.wvu.edu
+- sitename.sitespace.wvu.edu
+- www.sitename.wvu.edu
+deny: 
+- "*"

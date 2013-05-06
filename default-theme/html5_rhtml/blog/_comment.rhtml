@@ -1,0 +1,17 @@
+<div class="comment" id="<%= comment.dom_id -%>">
+	<div class="header">
+		<span class="number"><%= comment_counter = counter(:comment) -%></span>
+    <span class="author"><%=strip_tags comment.author -%></span> | 
+    <span class="dtstamp"><%= comment.created_on.eztime(':amonth :day at :hour12::minute :lmeridian') %></span>
+    <% if @blog_article.comments_enabled? %>
+    <span class="reply"><%= reply_to_comment_link(comment_counter, comment) -%></span>
+    <% end %>
+  </div>
+
+  <div class="body">
+	  <p><%= comment.body_html -%></p>
+  </div>
+
+  <div class="footer"></div>
+  <%= blog_article_comments(comment) -%>
+</div>

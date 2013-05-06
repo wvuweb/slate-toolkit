@@ -1,0 +1,11 @@
+<div id="archives">
+<h2>Archives for <%= Date::MONTHNAMES[blog_archive.month] -%> <%= blog_archive.year -%></h2>
+<ul>
+<% for article in blog_articles_in_archive -%>
+  <li><%= link_to_blog_article article -%>
+	    <span class="stamp"> &mdash; <%= article.published_on.eztime(":nmonth :day:ordinal") -%></span>
+	    <span class="author"> - <%= article.created_by.first_name -%></span>
+  </li>
+<% end -%>
+</ul>
+</div>

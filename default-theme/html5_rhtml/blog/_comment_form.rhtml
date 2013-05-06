@@ -1,0 +1,45 @@
+<% if flash[:notice] -%>
+  <div id="flash" <%= 'style="display:none;"' unless flash[:notice] -%>><%= flash[:notice] -%></div>
+<% else -%>
+  <div id="new-comment">
+    <% if !@blog_article.comments_enabled? %>
+      <h3>Comments disabled</h3>
+      <span>Comments have been disabled for this article.</span>
+    <% else %>  
+    	<h3>Add comment</h3>
+    	<span id="comment-msg">You are adding a new comment</span>
+    	<%= form_tag :controller => 'comments', :action => 'new', :id => @blog_article -%> 
+    	  <%= hidden_field_tag 'page_id', @page.id -%>
+    	  <%= hidden_field 'comment', 'parent_id' -%><br />
+  
+    	  <div class="field comment_author">
+    	    <div class="info"><label>Name:</label></div>
+    		  <div class="input"><%= text_field 'comment', 'author' -%></div>
+    	  </div>
+
+    	  <div class="field comment_email_address">
+    	    <div class="info"><label>E-Mail:</label></div>
+    	    <div class="input"><%= text_field 'comment', 'email_address' -%></div>
+    	  </div>
+
+        <% if @blog.comment_key -%>
+        <div class="field comment_key">
+    	    <div class="info"><label>Key:</label></div>
+    	    <div class="input"><%= password_field_tag 'comment_key' -%></div>
+    	  </div>
+        <% end -%>
+
+    	  <div class="field comment_body">
+    	    <div class="info"><label>Comment:</label></div>
+    	    <div class="input"><%= text_area  'comment', 'body', :rows => 10, :cols => 65 -%></div>
+    	  </div>
+
+    	  <div class="actions">
+    	    <%= submit_tag 'Add comment', :class => 'submit' -%>
+    	  </div>
+    	<%= end_form_tag -%>
+<br />
+		<a href="http://webservices.wvu.edu/policies_and_guidelines/Blog">Read the blog guidelines</a>
+    <% end %>	
+  </div>
+<% end -%>

@@ -1,0 +1,59 @@
+<%= partial :header -%>
+
+
+<%= javascript_include_tag :defaults, 'blog' -%>
+</head>
+
+<body id="backpage" class="blog-<%= @page.id -%>">
+
+<%= partial :navigation -%>
+
+	<main class="ten columns" role="main">
+		<h2><%= page_name %></h2>
+		<%= blog_engine -%>
+	</main> <!-- close main -->
+	
+	<aside class="sidebar six columns" role="complementary">
+		<div class="widget">
+			<p class="contentlabel">Recent Articles</p> 
+			<ul>
+				<% for item in blog_recent_articles -%>
+			    <li><%= link_to_blog_article(item) -%></li>
+			    <% end -%>
+			</ul>
+		</div> <!-- close widget recent -->
+		
+		<div class="widget archives">
+			<p class="contentlabel">Archives</p> 
+			<ul>
+			    <% for item in blog_archives -%>
+			    <li><%= link_to_blog_archive(item) -%></li>
+			    <% end -%>
+			</ul>
+		</div> <!-- close widget archives -->
+		<div class="widget authors">
+
+			<%= content_for(:categories) %>
+		</div> <!-- close widget authors -->
+		<div class="widget rss">
+			<a href="<%= blog_rss_url -%>"><img src="/themes/shared/webstandards/images/rss.png" alt="RSS" id="rssimg" /> Articles</a>
+		</div> <!-- close widget rss -->
+		
+	</aside> <!-- close aside -->
+	
+	<footer id="footer">
+		<%= partial 'shared/webstandards/html5/footer_contact_1' %>  
+		<%= partial 'shared/webstandards/html5/footer_credits' %>
+		<%= partial 'shared/webstandards/html5/footer_icons' %>
+	</footer>
+
+</div> <!-- close container -->
+
+<!-- Fix IE 8 and below so that media queries get supported -->
+<!--[if lt IE 9]>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+<![endif]-->
+
+<%= partial 'shared/webstandards/html5/browserupdateorg_script' %>
+</body>
+</html>

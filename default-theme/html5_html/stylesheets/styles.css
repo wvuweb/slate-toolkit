@@ -1,0 +1,80 @@
+/* WVU Color Pallette - 2012
+ ==================================================
+
+	PRIMARY PALLETTE
+		WVU Blue: #00447c
+		WVU Gold: #eeb111
+		Alternate Blue: #005daa
+	
+	SECONDARY PALLETTE
+		Secondary Light Gold: #ffe894
+		Secondary Middle Blue: #0079c1
+        Secondary Light Blue: #a0c4da
+        Purple: #27318b
+        Dark Orange: #d9531e
+		Orange: #f47b20
+        100% Black: #000
+        Dark Grey: #455560
+        Middle Grey: #5c6f7c
+
+	
+	TERTIARY PALLETTE
+		Blue Grey: #ABC 
+		Light Grey: #E0E0E0
+		Vibrant Blue: #39F 
+		Grey-Blue: #369 
+        Bright Purple: #60c                                                           
+
+/* Put your Mobile First styles here */
+
+
+
+
+
+/* #Mobile - Landscape
+================================================== */
+  /* Note: Design for a width of 480px */
+@media only screen and (min-width: 30em) {
+
+
+} /* Close Mobile Landscape media query */
+
+
+
+
+/* #Tablet - Portrait
+================================================== */
+  /* Note: Design for a width of 768px */
+@media only screen and (min-width: 48em) {
+
+
+} /* Close Tablet media query */
+
+
+
+
+/* # 960 Grid - Desktop
+================================================== */
+  /* Note: Design for a width of 960px */
+@media only screen and (min-width: 60em) {
+
+
+} /* Close Desktop media query */
+
+
+
+
+/* Going BIG, we love the large screens - 1200px and up
+================================================== */
+  /* Note: Design for a width of 1200px */
+@media only screen and (min-width: 75em)  {
+
+
+} /* Close Wide Desktop media query */
+
+
+
+
+
+/* Styles for Internet Explorer
+================================================== */

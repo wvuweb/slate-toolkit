@@ -1,0 +1,30 @@
+<%= admin_toolbar %>
+
+<%= partial 'shared/webstandards/html5/masthead2013' %>
+
+<div class="container">
+
+
+<header class="sixteen columns">
+
+	<a href="/"><%= site_name %></a>
+
+	<nav class="sixteen columns alpha omega" role="navigation">
+
+		<ul>
+			<% for page in site_menu %>
+		  	<li><%= link_to_page page %></li>
+			<% end %>
+		</ul>
+	
+	</nav> <!-- close nav -->
+
+	<div id="breadcrumbs" class="sixteen columns alpha omega">
+		
+		<a href="/">Home</a>
+    		<% for crumb in breadcrumbs %>
+	        	&raquo; <%= link_to_page crumb %>
+	    	<% end %>
+	</div> <!-- close breadcrumbs -->
+
+</header>
