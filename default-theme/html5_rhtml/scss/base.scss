@@ -22,9 +22,10 @@
 // If you don't want to use the entire global stylesheet,
 // Remove it from _header.rhtml and import only the parts you want:
 // --------------------------------------------------
-  // "../../shared/scss/v1/scss/vendor/_normalize";
-  // "../../shared/scss/v1/scss/vendor/_grid";
-  // "../../shared/scss/v1/scss/partials/_masthead";
-  // "../../shared/scss/v1/scss/partials/_footer";
-  // "../../shared/scss/v1/scss/partials/_print"; //  <--- This one should come last
+  // "../../shared/scss/v3/scss/vendor/_normalize";
+  // "../../shared/scss/v3/scss/vendor/_grid";
+  // "../../shared/scss/v3/scss/partials/_typography",
+  // "../../shared/scss/v3/scss/partials/_masthead";
+  // "../../shared/scss/v3/scss/partials/_footer";
+  // "../../shared/scss/v3/scss/partials/_print"; //  <--- This one should come last
   // etc, etc...
