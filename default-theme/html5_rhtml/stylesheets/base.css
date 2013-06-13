@@ -1,0 +1,65 @@
+.comment { padding: 20px; }
+
+article .date { visibility: hidden; display: none; }
+
+form .comment_author { float: left; width: 49%; }
+
+#new-comment h3 { border-bottom-width: 1px; border-bottom-style: dotted; border-bottom-color: #CCC; }
+
+form .comment_email_address { float: right; width: 49%; }
+
+article .footer span { background-color: #666; font-family: Helvetica,  "Helvetica Neue",  Arial,  Verdana,  sans-serif; font-size: 10px; font-weight: 700; float: left; width: 120px; height: 15px; line-height: 15px; margin-right: 1px; }
+
+article .footer a { display: block; color: #FFF; padding-left: 7px; text-decoration: none; }
+
+article .header span, .comment .header span { font-family: Arial,  Helvetica,  sans-serif; color: #69C; }
+
+.comment .number { font-size: 300%; position: absolute; left: -70px; }
+
+.comment .reply { float: right; position: absolute; right: 0; top: 0; }
+
+.comment .header { position: relative; color: #CCC; }
+
+.comment .body { clear: left; }
+
+article .body { padding-bottom: 10px; padding-top: 5px; }
+
+article .header { color: #CCC; }
+
+article .header h2 { font-size: 230%; padding-bottom: 5px; margin-bottom: 5px; }
+
+article { padding-bottom: 40px; margin-bottom: 20px; }
+
+#comment_author, #comment_email_address, #comment_body { width: 100%; }
+
+#flash p { margin: 0; }
+
+#flash p.msg { font-size: 1.5em; color: #000; }
+
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+body { font-size: 1em; line-height: 1.6; }
+
+img, iframe, video, embed, object { max-width: 100%; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+img { vertical-align: middle; }
+
+fieldset { border: 0; margin: 0; padding: 0; }
+
+textarea { resize: vertical; }
+
+abbr { cursor: help; }
+
+#breadcrumbs { font-size: 10px; color: #5c6f7c; line-height: 18px; margin: 18px 0; }
+
+#index #breadcrumbs { display: none; }
+
+#breadcrumbs a.current-page { color: #5c6f7c; }
+
+#nav li, nav li { padding-left: 0; float: left; }
+
+nav a, #nav a, nav a:visited, #nav a:visited { font-size: 11px; padding: 5px 10px; background-color: #455560; margin-right: 1px; color: #fff; float: left; }
+
+nav a:hover, #nav a:hover { background-color: #f47b20; color: #fff; }

@@ -1,0 +1,30 @@
+// ---Import all the things!---
+@import "compass";
+
+// --Variables--
+@import "../../shared/scss/v3/scss/partials/_variables";
+
+// --Utilities--
+@import 
+  "../../shared/scss/v3/scss/utilities/_hide-clear",
+  "../../shared/scss/v3/scss/utilities/_image-replacement";
+
+// --Vendor--
+
+
+// --Partials--
+@import 
+  "../../shared/scss/v3/scss/partials/_blogs",
+  "partials/_styles"; // If you're not using a blog, remove _blogs.scss.
+
+
+
+// If you don't want to use the entire global stylesheet,
+// Remove it from _header.rhtml and import only the parts you want:
+// --------------------------------------------------
+  // "../../shared/scss/v1/scss/vendor/_normalize";
+  // "../../shared/scss/v1/scss/vendor/_grid";
+  // "../../shared/scss/v1/scss/partials/_masthead";
+  // "../../shared/scss/v1/scss/partials/_footer";
+  // "../../shared/scss/v1/scss/partials/_print"; //  <--- This one should come last
+  // etc, etc...
