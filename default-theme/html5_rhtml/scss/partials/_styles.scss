@@ -16,6 +16,8 @@ fieldset { border: 0; margin: 0; padding: 0; }
 textarea { resize: vertical; }
 abbr { cursor: help; }
 
+// Check out our global variables to easily cite the WVU color pallette: 
+// http://slate.wvu.edu/themes/shared/scss/v3/scss/partials/_variables.scss
 #breadcrumbs{ font-size: 10px; color: $middle-grey; line-height: 18px; margin: 18px 0; }
 #index #breadcrumbs { display: none; }
 #breadcrumbs a.current-page{ color: $middle-grey; }
