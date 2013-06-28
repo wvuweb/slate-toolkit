@@ -12,8 +12,8 @@ A **SCSS** boilerplate for creating themes in [SlateCMS](http://slatecms.wvu.edu
 
 
 ## How do I use it?
-1. [Download the zip](https://github.com/wvuweb/slate-toolkit/archive/master.zip).  
-2. Choose the files/workflow approach you'd like (either starting in `.rhtml` or `.html`).
+1. [Download the zip](https://github.com/wvuweb/slate-toolkit/archive/scss.zip).  
+2. Use the `.rhtml` files (or convert those to normal HTML).
 3. Drag your project's folder onto [CodeKit](http://incident57.com/codekit/index.php) ([Mixture](http://mixture.io), [Scout](http://mhs.github.io/scout-app/), or any other compiler will also work).
 3. Develop your site, upload to Slate (or wherever) like you always have, and prosper.
 
