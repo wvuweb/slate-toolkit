@@ -1,4 +1,7 @@
 // ---Import all the things!---
+//    Pay attention to how you order your Sass files.
+//    Variables & Utilities (mixins) should almost always come before Vendor & Partial files.
+
 @import "compass";
 
 // --Variables--
