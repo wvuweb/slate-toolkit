@@ -29,8 +29,3 @@ For instructions on how to use the Mobile First Skeleton Grid, please refer to [
 ### "I want to customize this boilerplate. What's the best way to do that?"
 
 Enter into the world of forking with Git. At the top of this page is a "Fork" button. This will copy (or "`fork`") this repository to your account. From there, you can use Git & GitHub to customize this toolkit to your liking. If we make a change later that you like and want to add to your customized version, [it's super easy](https://help.github.com/articles/fork-a-repo). If you need help learning Git, check out [Try Git](http://try.github.io).
-
-----
-
-#### Still to do
- * Create a SCSS branch of this boilerplate.
