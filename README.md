@@ -1,4 +1,4 @@
-Sass Slate Toolkit (Beta)
+Sass Slate Toolkit
 =============
 
 A **SCSS** boilerplate for creating themes in [SlateCMS](http://slatecms.wvu.edu).
@@ -14,8 +14,8 @@ A **SCSS** boilerplate for creating themes in [SlateCMS](http://slatecms.wvu.edu
 ## How do I use it?
 1. [Download the zip](https://github.com/wvuweb/slate-toolkit/archive/scss.zip).  
 2. Use the `.rhtml` files (or convert those to normal HTML).
-3. Drag your project's folder onto [CodeKit](http://incident57.com/codekit/index.php) ([Mixture](http://mixture.io), [Scout](http://mhs.github.io/scout-app/), or any other compiler will also work).
-3. Develop your site, upload to Slate (or wherever) like you always have, and prosper.
+3. Drag your project's folder onto [CodeKit](http://incident57.com/codekit/index.php) ([Prepros](http://alphapixels.com/prepros/), [Mixture](http://mixture.io), [Scout](http://mhs.github.io/scout-app/), or any other precompiler will also work).
+4. Develop your site, upload to Slate (or wherever) like you always have, and prosper.
 
 For instructions on how to use the Mobile First Skeleton Grid, please refer to [its repository](https://github.com/adamjohnson/Skeleton) or the [Skeleton homepage](http://www.getskeleton.com/).
 
@@ -23,7 +23,7 @@ For instructions on how to use the Mobile First Skeleton Grid, please refer to [
  * Pick and choose what Sass partials you want. Use all, some, or none. We've made it modular—letting you choose which files you want and which you don't.
      * Check out `base.scss` and `slate_themes/shared/scss/` to pick and choose which files you want to include. 
  * HTML5 Ready
- * Mobile first using the [Mobile First Skeleton Grid](https://github.com/adamjohnson/Skeleton)
+ * Mobile first using the [Mobile First Skeleton Grid](https://github.com/adamjohnson/Skeleton) (optional).
  * Compatible with [all of the browsers that we support](https://brand.wvu.edu/web_standards).
  * Includes [WVU's global stylesheet](http://slate.wvu.edu/themes/shared/scss/v3/stylesheets/global2013-v3.css) which has Normalize.css, basic print styles, WVU's global masthead, footer, and typography baked right in.
  * Built with progressive enhancement in mind.
@@ -32,4 +32,14 @@ For instructions on how to use the Mobile First Skeleton Grid, please refer to [
 
 ### "I want to customize this boilerplate. What's the best way to do that?"
 
-Enter into the world of forking with Git. At the top of this page is a "Fork" button. This will copy (or "`fork`") this repository to your account. From there, you can use Git & GitHub to customize this toolkit to your liking. If we make a change later that you like and want to add to your customized version, [it's super easy](https://help.github.com/articles/fork-a-repo). If you need help learning Git, check out [Try Git](http://try.github.io).
+Enter into the world of forking with Git. At the top of this page is a "Fork" button. This will copy (or "`fork`") this repository to your account. From there, you can use Git & GitHub to customize this toolkit to your liking. If we make a change later that you like and want to add to your customized version, [it's super easy](https://help.github.com/articles/fork-a-repo). If you need help learning Git, check out [Try Git](http://try.github.io). 
+
+#### What's with the `partials`, `utilities`, and `vendor` folders?
+This is meant to be a way to keep your project organized and well structured. It's based off of concepts from [this post](http://thesassway.com/beginner/how-to-structure-a-sass-project).
+
+  * The `partials` directory is where the majority of your CSS will be constructed. A lot of folks enjoy breaking their stylesheets into sections like header, sidebar, footer, etc. The way your organize your project is up to you.
+  * The `utilities` folder is for mixins and other Sass code that doesn't actually output CSS. 
+  * The `vendor` directory is for third party CSS. Any CSS coming from third party sources (such as FlexSlider, Bootstrap, etc) should go in this folder. CSS in the vendor folder should not be edited. If you edit it, immediately move it to the `partials` folder.
+
+#### Why isn't there a `scss` folder within the `html5_html` directory & how can I fix that?
+We didn't want to have to maintain the `scss` folder in two places; thereby, why we kept the `scss` files in the `html5_rhtml` folder. If you want to use the scss folder in a flat HTML project, simply copy and paste the `scss` folder from the `html5_rhtml` directory to the `html5_html` directory.
