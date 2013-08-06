@@ -41,5 +41,5 @@ This is meant to be a way to keep your project organized and well structured. It
   * The `utilities` folder is for mixins and other Sass code that doesn't actually output CSS. 
   * The `vendor` directory is for third party CSS. Any CSS coming from third party sources (such as FlexSlider, Bootstrap, etc) should go in this folder. CSS in the vendor folder should not be edited. If you edit it, immediately move it to the `partials` folder.
 
-#### Why isn't there a `scss` folder within the `html5_html` directory & how can I fix that?
-We didn't want to have to maintain the `scss` folder in two places; thereby, why we kept the `scss` files in the `html5_rhtml` folder. If you want to use the scss folder in a flat HTML project, simply copy and paste the `scss` folder from the `html5_rhtml` directory to the `html5_html` directory.
+#### Whaaaaaat?!? No `scss` folder for flat HTML Projects? What gives, dude?
+Not to worry! We didn't want to have to maintain the `scss` folder in two places; thereby, why we kept the `scss` files in the `html5_rhtml` folder. If you want to use the scss folder in a flat HTML project, simply copy and paste the `scss` folder from the `html5_rhtml` directory to the `html5_html` directory.
