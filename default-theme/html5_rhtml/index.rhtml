@@ -1,28 +1,28 @@
 <%= partial :header -%>
 </head>
 
-<body id="index" class="page-<%= @page.id -%>">
+<body class="index page-<%= @page.id -%>">
 
 <%= partial :navigation -%>
 
-	<main class="sixteen columns" role="main"> <!-- role="main", etc are ARIA roles, use appropriately: http://goo.gl/P3voj | Include a search in your theme: http://goo.gl/InZM8 -->
+	<main class="main sixteen columns" role="main"> <!-- role="main", etc are ARIA roles, use appropriately: http://goo.gl/P3voj | Include a search in your theme: http://goo.gl/InZM8 -->
 
 		<%= content_for(:main) %>
 		
-	</main> <!-- close main -->
+	</main> <!-- /.main -->
 	
 	<aside class="sidebar" role="complementary">
 		
-	</aside> <!-- close aside -->
+	</aside> <!-- /.sidebar -->
 
 
-	<footer id="footer">
-		<%= partial 'shared/webstandards/html5/footer_contact_1' %>  
+	<footer class="footer">
+		<%= partial 'shared/webstandards/html5/footer_contact_2' %>  
 		<%= partial 'shared/webstandards/html5/footer_credits' %>
 		<%= partial 'shared/webstandards/html5/footer_icons' %>
 	</footer>
 
-</div> <!-- close container -->
+</div> <!-- /.container -->
 
 <!-- Fix IE 8 and below so that media queries get supported -->
 <!--[if lt IE 9]>
