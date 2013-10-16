@@ -1,0 +1,36 @@
+// ---Import all the things!---
+//    Pay attention to how you order your Sass files.
+//    Variables & Utilities (mixins) should almost always come before Vendor & Partial files.
+
+@import "compass";
+
+// --Variables--
+@import "../../shared/scss/v4/scss/partials/_variables";
+
+// --Utilities--
+@import 
+  "../../shared/scss/v4/scss/utilities/_hide-clear",
+  "../../shared/scss/v4/scss/utilities/_image-replacement";
+
+// --Vendor--
+
+
+// --Partials--
+@import 
+  "partials/_main";
+
+
+
+// If you don't want to use the entire global stylesheet,
+// Remove it from _header.rhtml and import only the parts you want:
+// --------------------------------------------------
+  // "../../shared/scss/v4/scss/vendor/_normalize";
+  // "../../shared/scss/v4/scss/vendor/_grid";
+  // "../../shared/scss/v4/scss/partials/_base",
+  // "../../shared/scss/v4/scss/partials/_typography",
+  // "../../shared/scss/v4/scss/partials/_masthead"; // <--- Requires _image-replacement.scss to be imported.
+  // "../../shared/scss/v4/scss/partials/_navigation",
+  // "../../shared/scss/v4/scss/partials/_blogs",
+  // "../../shared/scss/v4/scss/partials/_footer"; // <--- Requires _image-replacement.scss to be imported.
+  // "../../shared/scss/v4/scss/partials/_print"; //  <--- This one should come last
+  // etc, etc...
