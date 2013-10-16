@@ -5,7 +5,7 @@ A boilerplate for creating themes in [SlateCMS](http://slatecms.wvu.edu).
 
 ## What's included?
  * `.rhtml` files for native development within the CMS.
- * `.html` files for those who prefer to work in flat HTML and convert to `.rhtml` later. 
+ * `.html` files for those who prefer to work in flat HTML and convert to `.rhtml` (or whatever else) later. 
  * A Photoshop file with some basic typography, grid layout, WVU's global masthead and footer. 
  * A swatches file for Photoshop that contains the WVU brand colors.
 
@@ -19,9 +19,9 @@ For instructions on how to use the Mobile First Skeleton Grid, please refer to [
 
 ### Features
  * HTML5 Ready
- * Mobile first using the [Mobile First Skeleton Grid](https://github.com/adamjohnson/Skeleton)
+ * Fluid and mobile first using the [Fluid Mobile First Skeleton Grid](https://github.com/adamjohnson/Skeleton-fluid-mobile-first)
  * Compatible with [all of the browsers that we support](https://brand.wvu.edu/web_standards).
- * Includes [WVU's global stylesheet](http://slate.wvu.edu/themes/shared/webstandards/html5/stylesheets/global2013-v2.css) which has Normalize.css, basic print styles, WVU's global masthead, footer, and typography baked right in.
+ * Includes [WVU's global stylesheet](http://slate.wvu.edu/themes/shared/scss/v4/stylesheets/global-v4.css) which has [Normalize.css](http://necolas.github.io/normalize.css/), basic print styles, WVU's global masthead, footer, and typography baked right in.
  * Built with progressive enhancement in mind.
  * Placeholder CSS Media Queries
  * and so much more...
