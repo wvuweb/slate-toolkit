@@ -17,15 +17,15 @@ A **SCSS** boilerplate for creating themes in [SlateCMS](http://slatecms.wvu.edu
 3. Drag your project's folder onto [CodeKit](http://incident57.com/codekit/index.php) ([Prepros](http://alphapixels.com/prepros/), [Mixture](http://mixture.io), [Scout](http://mhs.github.io/scout-app/), or any other precompiler will also work).
 4. We bundle Compass by default. To get that working in CodeKit: 
     * Right click your project on the left side of CodeKit and select "Compass > Use Compass for this project".
-    * Select "Locate"
+    * Select "Locate" in the modal that appears.
     * Select the `config.rb` file in your project's root folder and hit "OK". 
 5. Develop your site, upload to Slate (or wherever) like you always have, and prosper.
 
-For instructions on how to use the Mobile First Skeleton Grid, please refer to [its repository](https://github.com/adamjohnson/Skeleton) or the [Skeleton homepage](http://www.getskeleton.com/).
+For instructions on how to use the Fluid Mobile First Skeleton Grid, please refer to [its repository](https://github.com/adamjohnson/Skeleton-fluid-mobile-first) or the [Skeleton homepage](http://www.getskeleton.com/).
 
 ### Features
  * Pick and choose what Sass partials you want. Use all, some, or none. We've made it modular—letting you choose which files you want and which you don't.
-     * Check out `base.scss` and `slate_themes/shared/scss/` to pick and choose which files you want to include. 
+     * Check out `styles.scss` and `slate_themes/shared/scss/` to pick and choose which files you want to include. 
  * HTML5 Ready
  * Fluid and mobile first using the [Fluid Mobile First Skeleton Grid](https://github.com/adamjohnson/Skeleton-fluid-mobile-first)
  * Compatible with [all of the browsers that we support](https://brand.wvu.edu/web_standards).
